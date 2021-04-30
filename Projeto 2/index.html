@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="projeto2.css">
+    <script src="código.js"></script>
+    <title>Cifra de César e Base-64</title>
+</head>
+<body>
+    <h1>Criptografia</h1>
+            <label for="textInput">Oque quer decodificar/codificar ?</label>
+            <input type="text" id="textInput" required></br>
+            <div>
+                <input type="radio" name="tipo" value="Cifra" id="Cifra" onclick="elementhidden()">Cifra de Cesar</input>
+                <input type="radio" name="tipo" value="Base64" onclick="elementhidden()">Base 64</input></br>
+            </div>
+            <spam id="quantidade">
+                <label for="textInput">Quanto de incremento?</label>
+                <input type="number" id="numero" name="quantidade" min="0"></input>
+            </spam>
+            <div>
+                <input type="radio" name="mensagem" value="codificar" id="codifico" onclick="codificando()">Codificar</input>
+                <input type="radio" name="mensagem" value="decodificar" onclick="codificando()">Decodificar</input></br>
+            </div>
+            <div id="codificar">
+                <button onclick="criptografar()">Codificar Mensagem!</button>
+            </div>
+            <div id="decodificar" >
+                <button onclick="descriptografar()">Decodificar Mensagem!</button>
+            </div>
+            <p id='resposta'></p>  
+            <h1 id="Goku"></h1>
+</body>
+</html>
